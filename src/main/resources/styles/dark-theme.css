@@ -1,0 +1,363 @@
+/* ═══════════════════════════════════════════════════════════════
+   NeuraBot AI — Dark Theme CSS
+   Author: Mohammad Sakib Ahmad
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── ROOT VARIABLES ──────────────────────────────────────────── */
+.root {
+    -fx-background-color: #0D1117;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-text-fill: #E6EDF3;
+}
+
+
+/* ── SCROLLBAR ───────────────────────────────────────────────── */
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(108, 99, 255, 0.25);
+    -fx-background-radius: 4;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: rgba(108, 99, 255, 0.5);
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-pref-height: 0;
+}
+
+.scroll-bar:horizontal {
+    -fx-pref-height: 6px;
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: rgba(108, 99, 255, 0.25);
+    -fx-background-radius: 3;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* ── BUTTONS ─────────────────────────────────────────────────── */
+.button {
+    -fx-font-family: "Segoe UI";
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+
+.button:focused {
+    -fx-focus-color: #6C63FF;
+    -fx-faint-focus-color: rgba(108, 99, 255, 0.2);
+}
+
+/* ── TEXT FIELDS ─────────────────────────────────────────────── */
+.text-field, .text-area, .password-field {
+    -fx-background-color: #0D1117;
+    -fx-text-fill: #E6EDF3;
+    -fx-prompt-text-fill: #374151;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(108, 99, 255, 0.2);
+    -fx-border-width: 1;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+}
+
+.text-field:focused, .text-area:focused, .password-field:focused {
+    -fx-border-color: #6C63FF;
+    -fx-effect: dropshadow(gaussian, rgba(108, 99, 255, 0.25), 8, 0, 0, 0);
+}
+
+/* ── LABELS ──────────────────────────────────────────────────── */
+.label {
+    -fx-text-fill: #E6EDF3;
+    -fx-font-family: "Segoe UI";
+}
+
+/* ── COMBO BOX ───────────────────────────────────────────────── */
+.combo-box {
+    -fx-background-color: #161B22;
+    -fx-text-fill: #E6EDF3;
+    -fx-border-color: rgba(108, 99, 255, 0.2);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #161B22;
+    -fx-text-fill: #E6EDF3;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #161B22;
+    -fx-border-color: rgba(108, 99, 255, 0.3);
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(108, 99, 255, 0.15);
+}
+
+/* ── TABLE VIEW ──────────────────────────────────────────────── */
+.table-view {
+    -fx-background-color: #161B22;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(108, 99, 255, 0.12);
+    -fx-border-radius: 10;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #1C2128;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64748B;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #64748B;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(108, 99, 255, 0.05);
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: #E6EDF3;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: rgba(108, 99, 255, 0.06);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(108, 99, 255, 0.15);
+}
+
+.table-cell {
+    -fx-text-fill: #94A3B8;
+    -fx-font-size: 13px;
+}
+
+/* ── TAB PANE ────────────────────────────────────────────────── */
+.tab-pane {
+    -fx-background-color: transparent;
+    -fx-tab-min-width: 100;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #161B22;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64748B;
+    -fx-font-size: 13px;
+    -fx-padding: 8 20;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: rgba(108, 99, 255, 0.15);
+    -fx-text-fill: white;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: inherit;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: #161B22;
+}
+
+/* ── SEPARATOR ───────────────────────────────────────────────── */
+.separator .line {
+    -fx-border-color: rgba(108, 99, 255, 0.12);
+    -fx-border-width: 0.5 0 0 0;
+}
+
+/* ── PROGRESS BAR ────────────────────────────────────────────── */
+.progress-bar {
+    -fx-background-color: #1C2128;
+    -fx-background-radius: 4;
+    -fx-pref-height: 6;
+}
+
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(to right, #6C63FF, #A78BFA);
+    -fx-background-radius: 4;
+    -fx-background-insets: 0;
+}
+
+/* ── SLIDER ──────────────────────────────────────────────────── */
+.slider .track {
+    -fx-background-color: #1C2128;
+    -fx-background-radius: 4;
+    -fx-pref-height: 4;
+}
+
+.slider .thumb {
+    -fx-background-color: #6C63FF;
+    -fx-background-radius: 50%;
+    -fx-pref-width: 16;
+    -fx-pref-height: 16;
+    -fx-effect: dropshadow(gaussian, rgba(108,99,255,0.4), 6, 0, 0, 0);
+}
+
+.slider:focused .thumb {
+    -fx-background-color: #8B5CF6;
+}
+
+/* ── CHECK BOX ───────────────────────────────────────────────── */
+.check-box .box {
+    -fx-background-color: #0D1117;
+    -fx-border-color: rgba(108, 99, 255, 0.4);
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #6C63FF;
+    -fx-border-color: #6C63FF;
+}
+
+.check-box .mark {
+    -fx-background-color: white;
+}
+
+/* ── RADIO BUTTON ────────────────────────────────────────────── */
+.radio-button .radio {
+    -fx-background-color: #0D1117;
+    -fx-border-color: rgba(108, 99, 255, 0.4);
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #6C63FF;
+    -fx-border-color: #6C63FF;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: white;
+}
+
+/* ── ALERT / DIALOG ──────────────────────────────────────────── */
+.dialog-pane {
+    -fx-background-color: #161B22;
+    -fx-border-color: rgba(108, 99, 255, 0.2);
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #0D1117;
+    -fx-background-radius: 12 12 0 0;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .content.label {
+    -fx-text-fill: #94A3B8;
+    -fx-font-size: 13px;
+}
+
+.dialog-pane .button-bar {
+    -fx-background-color: #161B22;
+}
+
+/* ── HYPERLINK ───────────────────────────────────────────────── */
+.hyperlink {
+    -fx-text-fill: #6C63FF;
+    -fx-border-color: transparent;
+    -fx-underline: false;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #A78BFA;
+    -fx-underline: true;
+}
+
+/* ── TOOLTIP ─────────────────────────────────────────────────── */
+.tooltip {
+    -fx-background-color: #161B22;
+    -fx-text-fill: #E6EDF3;
+    -fx-border-color: rgba(108, 99, 255, 0.3);
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-size: 12px;
+}
+
+/* ── CONTEXT MENU ────────────────────────────────────────────── */
+.context-menu {
+    -fx-background-color: #161B22;
+    -fx-border-color: rgba(108, 99, 255, 0.2);
+    -fx-background-radius: 8;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+}
+
+.menu-item .label {
+    -fx-text-fill: #94A3B8;
+}
+
+.menu-item:hover {
+    -fx-background-color: rgba(108, 99, 255, 0.1);
+}
+
+.menu-item:hover .label {
+    -fx-text-fill: white;
+}
+
+/* ── CUSTOM CARD CLASS ───────────────────────────────────────── */
+.card {
+    -fx-background-color: #161B22;
+    -fx-background-radius: 14;
+    -fx-border-color: rgba(108, 99, 255, 0.12);
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 12, 0, 0, 2);
+}
+
+.card:hover {
+    -fx-border-color: rgba(108, 99, 255, 0.3);
+    -fx-effect: dropshadow(gaussian, rgba(108, 99, 255, 0.15), 16, 0, 0, 4);
+}
+
+/* ── PRIMARY BUTTON CLASS ────────────────────────────────────── */
+.btn-primary {
+    -fx-background-color: linear-gradient(to right, #6C63FF, #8B5CF6);
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(108, 99, 255, 0.35), 10, 0, 0, 2);
+}
+
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(to right, #7C73FF, #9B6CF6);
+    -fx-effect: dropshadow(gaussian, rgba(108, 99, 255, 0.5), 14, 0, 0, 4);
+}
